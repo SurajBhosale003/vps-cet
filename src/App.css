@@ -1,0 +1,585 @@
+/* src/App.css */
+.App {
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .content {
+    padding: 100px 0;
+  }
+  @media (max-width: 770px) {
+    h1 {
+      font-size: 1rem; 
+      padding-top: 5vh; /* Adjust the padding for mobile view */
+    }
+    
+    h2 {
+      font-size: 7vh; 
+    }
+    p{
+      font-family: 'Dancing Script', cursive;
+      /* font-size: 3vh; */
+      font-size: 4vh;
+      align: center;
+    }  
+  }
+
+  h1{
+   
+    font-family: 'Dancing Script', cursive;
+    /* font-size: 6vh; */
+    font-size: 12vh;
+  }
+  h2{
+    font-family: 'Dancing Script', cursive;
+    /* font-size: 3vh; */
+    font-size: 6vh;
+  } 
+  p{
+    font-family: 'Dancing Script', cursive;
+    /* font-size: 3vh; */
+    font-size: 10vh;
+  } 
+   
+
+  .home_slider{
+ 
+    color: white;
+  }
+  .home_slider_captions{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 8%;
+    height: -webkit-fill-available;
+    width: -webkit-fill-available;
+    background: rgba(0,0,0,0.3);
+  }
+  .home_slider_captions > p{
+    font-size: 37px;
+  }
+  .home_slider_captions > p:first-child{
+    font-size: 74px;
+  }
+  @media only screen and (max-width: 767px) {
+    .home_slider_captions {
+      gap: 4%;
+      
+    }
+  
+    .home_slider_captions > p {
+      font-size: 44px;
+      margin: 2rem;
+    }
+  
+    .home_slider_captions > p:first-child {
+      font-size: 44px;
+      margin: 2rem;
+    }
+  }
+  
+/* Slide Show */
+.react-slideshow-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.react-slideshow-container .nav {
+  /* z-index: 10; */
+  position: absolute;
+  cursor: pointer;
+}
+
+.react-slideshow-container .nav:first-of-type {
+  left: 0;
+}
+
+.react-slideshow-container .nav:last-of-type {
+  right: 0;
+}
+
+.react-slideshow-container .default-nav {
+  height: 30px;
+  background: rgba(255, 255, 255, 0.6);
+  width: 30px;
+  border: none;
+  text-align: center;
+  color: #fff;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: none;
+}
+
+.react-slideshow-container .default-nav:hover,
+.react-slideshow-container .default-nav:focus {
+  background: #fff;
+  color: #666;
+  outline: none;
+}
+
+.react-slideshow-container .default-nav.disabled:hover {
+  cursor: not-allowed;
+}
+
+.react-slideshow-container .default-nav:first-of-type {
+  margin-right: -30px;
+  border-right: none;
+  border-top: none;
+}
+
+.react-slideshow-container .default-nav:last-of-type {
+  margin-left: -30px;
+}
+
+.react-slideshow-container+ul.indicators {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.react-slideshow-container+ul.indicators li {
+  display: inline-block;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  margin: 0;
+}
+
+.react-slideshow-container+ul.indicators .each-slideshow-indicator {
+  border: none;
+  opacity: 0.25;
+  cursor: pointer;
+  background: transparent;
+  color: transparent;
+}
+
+.react-slideshow-container+ul.indicators .each-slideshow-indicator:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  content: '';
+  background: rgb(36, 34, 34);
+  text-align: center;
+}
+
+.react-slideshow-container+ul.indicators .each-slideshow-indicator:hover,
+.react-slideshow-container+ul.indicators .each-slideshow-indicator.active {
+  opacity: 0.75;
+  outline: none;
+}
+
+.react-slideshow-fadezoom-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.react-slideshow-fadezoom-wrapper .react-slideshow-fadezoom-images-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.react-slideshow-fadezoom-wrapper .react-slideshow-fadezoom-images-wrap>div {
+  position: relative;
+  opacity: 0;
+}
+
+.react-slideshow-wrapper .react-slideshow-fade-images-wrap>div[aria-hidden='true'] {
+  display: none;
+}
+
+.react-slideshow-wrapper.slide {
+  width: 100%;
+  overflow: hidden;
+}
+
+.react-slideshow-wrapper .images-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.react-slideshow-wrapper .images-wrap>div[aria-hidden='true'] {
+  display: none;
+}
+
+/* Nav Bar Text */
+
+.navText:hover {
+  cursor: pointer;
+}
+
+
+/* Home page information */
+
+.homepageTextContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+.homepageTextContainer h3 {
+  font-size: 2rem; /* Adjust the size as needed */
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.homepageTextContainer h4 {
+  font-size: 1.5rem; /* Adjust the size as needed */
+  text-align: justify;
+  max-width: 80%; /* Set a maximum width to control text width */
+}
+
+
+.homepageImageContainer{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+
+.homepageImageContainer .items{
+ 
+  padding: 4px 10px;
+  min-width: 35vh;
+  min-height: 50vh;
+  margin: 4px 10px;
+
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+} 
+
+/* About Us css code */
+
+/* .AboutMeContainer {
+  
+  max-width: 300px;
+  gap: 20px;
+}
+.AboutMeContainer .itemofAboutMe img{
+  height: 400px;
+  width: auto;
+}
+.CenterBody{
+  
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  margin: 0;
+}
+ */
+/* YourStyles.css */
+
+/* Styling for desktop layout */
+.CenterBody {
+  display: flex;
+  justify-content: space-between;
+}
+
+.AboutMeContainer {
+  width: 48%; /* Adjust the width as needed */
+  margin-bottom: 20px;
+}
+
+/* Styling for mobile layout */
+@media (max-width: 768px) {
+  .CenterBody {
+    flex-direction: column;
+  }
+
+  .AboutMeContainer {
+    width: 100%;
+  }
+}
+
+
+.BodyOfAboutMe{
+
+  padding-top: 4vh;
+  padding-left: 10vh;
+  padding-right: 10vh;
+  
+}
+.BodyOfAboutMe {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 16vh;
+}
+
+.AboutMeItems {
+  flex: 1;
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .BodyOfAboutMe {
+    flex-direction: column;
+  }
+  .BodyOfAboutMe{
+
+    padding-top: 2vh;
+    padding-left: 3vh;
+    padding-right: 3vh;
+    gap: 2vh;
+    
+  }
+}
+
+.HomePageContainer {
+  max-width: 80%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.HomePageSectionTitle {
+  font-size: 24px;
+  font-weight: bold;
+  color: #4CAF50;
+  margin-bottom: 10px;
+}
+
+.HomePageSectionContent {
+  margin-bottom: 20px;
+}
+
+.HomePageListItem {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.HomePageButtonContainer {
+  margin-top: 20px;
+}
+
+.HomePageButton {
+  display: inline-block;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Footer */
+
+.footer_area{
+  padding:10px;
+  display: flex;
+  align-items: center;
+  width: -webkit-fill-available;
+  height: 70px;
+  background-color: #3e4753;
+  margin-top: 20px;
+  color: white;
+  /* position: absolute;
+  bottom: 0; */
+}
+
+.why-vps-cet
+{
+  display: grid;
+  grid-template-columns: 1fr ;
+  text-align: justify;
+  padding: 10px;
+}
+.title-sub
+{
+  font-variant-caps: small-caps;
+    font-size: 30px;
+    background-image: linear-gradient(135deg,#e60f0f, #431258 );
+    -webkit-background-clip: text; 
+    background-clip: text;
+    color: transparent; 
+   
+}
+.about-info-p{
+  margin-top: 20px;
+  text-indent: 60px;
+  
+}
+.wvc-left{
+  line-height: 30px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 10px;
+}
+.wvc-right{
+  line-height: 30px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 10px;
+}
+.wvc-right-grid
+{
+  padding:10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 30px;
+  padding-bottom: 20px;
+  background-color:#3e4753;
+
+}
+.wvc-items
+{
+  font-variant: small-caps;
+  margin: 10px;
+
+}
+
+.wvc-news-grid
+{
+  padding:10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 30px;
+  padding-bottom: 20px;
+  background-color:#3e4753;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  
+
+}
+.news
+{
+  
+  max-width: 350px;
+  white-space: pre-wrap;
+}
+
+
+.main-title-home
+{
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 35px;
+  color: #fb6904;
+  font-variant: small-caps;
+  font-weight: 100;
+}
+.our-courses{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: justify;
+  padding: 10px;
+}
+.our-courses-items
+{
+  margin:20px;
+  background-color:#3e4753;
+  padding:20px;
+  transition-duration: 0.6s;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.our-courses-items:hover
+{
+  scale: 1.03;
+}
+
+.our-core-values-items
+{
+  margin:20px;
+  /* background-color:#3e4753; */
+  padding:15px;
+}
+.our-courses-title
+{
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
+  color: #fb6904;
+  font-variant: small-caps;
+  font-weight: bold;
+}
+
+.our-courses-info
+{
+  color: white;
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-variant: small-caps;
+  font-weight: 100;
+  
+}
+.our-core-values-info
+{
+
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-variant: small-caps;
+  font-weight: 300;
+  /* font-size: 20px; */
+}
+
+.enquiry-main
+{
+  padding: 10%;
+  /* border: 2px solid red; */
+}
+.enquiry
+{
+  /* border: 2px solid red; */
+}
+.admin
+{
+  padding: 8%;
+}
+.admin h2{
+  color: #431258;
+  font-family: 'Times New Roman', Times, serif;
+}
+.form-title
+{
+  text-transform: uppercase;
+  font-size: 25px;
+  text-align: center;
+  margin: 30px;
+}
+.deptgrid
+{
+  display: grid;
+  grid-template-columns: 1fr;
+}
